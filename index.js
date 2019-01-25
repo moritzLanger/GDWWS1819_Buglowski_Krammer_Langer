@@ -3,18 +3,19 @@ const app = express();
 var fs = require("fs");
 var content = fs.readFileSync("festivals.json");
 var json = JSON.parse(content);
-
+var json2html = require('node-json2html'); // npm install node-json2html
 app.use(express.json());
 
 
 app.get('/',(req,res) => {
-    res.send('Festivalsapp:\n'+
-    '<form action="http://localhost:3000/festivals" method="GET"><button>Festivals</button>'+
-    '<br><form action="http://localhost:3000/festivals/festivalid=1" method="GET"><button>Festival nr 1</button>');
+    var html = fs.readFileSync('./start.html', 'utf8');
+    res.send(html);
 });
 
 app.get('/festivals', (req,res) => {
-    res.json(json.response.festivals);
+    var transform = {'<>':'div','text':'${name} | ${info} | ${ort} | ${genre} '};
+    var html = json2html.transform(json.response.festivals,transform);
+    res.send(html);
 
 });
     
@@ -37,20 +38,26 @@ app.get('/festivals/:festivalid',(req,res) => {
 app.post('festivals/:festivalid/bewertungen',(req,res) => {
     
 });
-app.get('/festivals/:genre', (req,res) => {
+app.get('/festivals/genre/:genreid', (req,res) => {
     var ergebnis = [];
           var result = json.response.festivals.filter(function(item) {
-            return item.genre === req.params.genre //Change 3 to what you want to search for
+            return item.genre === cap1(req.params.genreid)
           });
           
-          for(i = 0; i < result.length; i++){
-              ergebnis.push(result[i].name);
-          }
-          res.send(ergebnis)
+          //for(i = 0; i < result.length; i++){
+          //    ergebnis.push(result[i].name);
+          //}
+         var transform = {'<>':'div','text':'${name} | ${info} | ${ort}'};
+         var html = json2html.transform(result,transform);
+         res.send('<h2>Genre: '+ cap1(req.params.genreid)+'</h2>'+html);
     });
 
-app.get('festivals/:ort',(req,res) => {
+app.get('festivals/ort/:ortid',(req,res) => {
 
 });
 
 app.listen(3000, () => console.log('Programm gestartet auf Port 3000'))
+
+function cap1(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
