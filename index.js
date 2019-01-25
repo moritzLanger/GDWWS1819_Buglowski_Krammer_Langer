@@ -29,7 +29,8 @@ app.get('/festivals/:festivalid',(req,res) => {
         + jsonFestivals[req.params.festivalid-1].genre + '<p>'
         + '<br>Beschreibung:<br>'
         + '<p>' + jsonFestivals[req.params.festivalid-1].info + '<p>'  
-        +'<br><form action="http://localhost:3000" method="GET"><button>Home</button>');
+        +'<br><form action="http://localhost:3000" method="GET"><button>Home</button>'
+        );
 });
 
 app.post('festivals/:festivalid/bewertungen',(req,res) => {
