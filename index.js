@@ -13,7 +13,10 @@ app.get('/',(req,res) => {
 });
 
 app.get('/festivals', (req,res) => {
-    var transform = {'<>':'div','text':'${name} | ${info} | ${ort} | ${genre} '};
+    var transform = {'<>':'li','html':'<b>${name}</b><br>'
+                +'<div style="margin-left: 25px;">${ort}<br>'
+                +'${genre}<br><br>'
+                +'${info}<br><br></div>'};
     var html = json2html.transform(json.response.festivals,transform);
     res.send(html);
 
@@ -22,7 +25,6 @@ app.get('/festivals', (req,res) => {
 app.get('/festivals/:festivalid',(req,res) => {
     //const festival = jsonFestivals.id.find(f => f.id === parseInt(req.params.festivalid));
     //if (!festival) res.status(404).send('Ein Festival mit dieser ID konnte nicht gefunden werden.')
-
     res.send(
         '<h3>Willkommen auf der Seite des Festivals:</h3>'
         + '<h2>' + json.response.festivals[req.params.festivalid-1].name + '</h2>' 
@@ -41,13 +43,16 @@ app.post('festivals/:festivalid/bewertungen',(req,res) => {
 app.get('/festivals/genre/:genreid', (req,res) => {
     var ergebnis = [];
           var result = json.response.festivals.filter(function(item) {
-            return item.genre === cap1(req.params.genreid)
+            return genreCheck(item.genre,cap1(req.params.genreid)) === cap1(req.params.genreid)
           });
           
           //for(i = 0; i < result.length; i++){
           //    ergebnis.push(result[i].name);
           //}
-         var transform = {'<>':'div','text':'${name} | ${info} | ${ort}'};
+         var transform = {'<>':'li','html':'<b>${name}</b><br>'
+                +'<div style="margin-left: 25px;">${ort}<br>'
+                +'${genre}<br><br>'
+                +'${info}<br><br></div>'};
          var html = json2html.transform(result,transform);
          res.send('<h2>Genre: '+ cap1(req.params.genreid)+'</h2>'+html);
     });
@@ -60,4 +65,18 @@ app.listen(3000, () => console.log('Programm gestartet auf Port 3000'))
 
 function cap1(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+function genreCheck(genstr,reqstr) {
+    var count = genstr.split("/").length;
+    if(!count == 0){
+        for(i = 0; i < count; i++){
+            if(genstr.split("/")[i] == reqstr){
+            return genstr.split("/")[i];
+            i=count;  
+            }
+        }   
+    }else{
+     return genstr;   
+    }
 }
