@@ -3,21 +3,129 @@
         "festivals":[
             {
                 "id":"1",
-                "name":"Festival 1",
-                "info":"hier koennte ihre werbung stehen",
-                "genre":"House","ort":"Koeln"},
+                "name":"Rock am Ring",
+                "info":"Rock am Ring ist ein von Marek Lieberberg veranstaltetes Musikfestival, das von 1985 bis 2014 und seit 2017 wieder auf dem Nürburgring in der Nähe der Stadt Adenau in der Eifel stattfindet. In den Jahren 2015 und 2016 fand das Festival am ehemaligen Bundeswehr-Flugplatz in Mendig statt. Es läuft parallel zu Rock im Park und hat eine fast identische Bandbesetzung.",
+                "genre":"Rock/Metal/Punk","ort":"Nürnberg"},
             {
                 "id":"2",
-                "name":"Festival 2",
-                "info":"hier koennte ihre werbung stehen",
-                "genre":"Techno","ort":"Gummersbach"
-            },
+                "name":"Rock im Park",
+                "info":"Rock im Park ist ein jährlich im Mai oder Juni im Volkspark Dutzendteich in Nürnberg stattfindendes Musikfestival und eine Parallelveranstaltung zu Rock am Ring mit einem fast identischen Line-Up.",
+                "genre":"Rock/Metal/Punk","ort":"Nürnberg"},
             {
                 "id":"3",
-                "name":"Festival 3",
-                "info":"hier koennte ihre werbung stehen",
-                "genre":"House",
-                "ort":"Koeln"
+                "name":"Wacken Open Air",
+                "info":"Das Wacken Open Air ist ein erstmals 1990 abgehaltenes Heavy-Metal-Festival, das jährlich am ersten Augustwochenende in der Gemeinde Wacken in Schleswig-Holstein stattfindet. Nahezu alle Spielarten des Hard Rock und Metal sind auf dem Festival vertreten. Mittlerweile ist es eines der größten Heavy-Metal-Festivals der Welt und eines der größten Open-Air-Festivals Deutschlands. In den Jahren 2011–2018 lag die Teilnehmerzahl jeweils bei rund 85.000 Menschen, davon 75.000 zahlende Besucher. 2018 fand das Festival vom 2. bis 4. August statt. Im Jahr 2019 ist das Festival für den 1. bis 3. August geplant.",
+                "genre":"Rock/Metal/Punk","ort":"Wacken"},
+            {
+                "id":"4",
+                "name":"Nature One",
+                "info":"Die Nature One ist eines der größten europäischen Festivals der elektronischen Tanzmusik und fand zum ersten Mal im Jahre 1995 statt. Auf dem Gelände findet in der Freitag- und Samstagnacht ein Freiluft-Rave mit international bekannten DJs statt. Der inoffizielle Beginn zeichnet sich bereits am Donnerstag mit einer großen Eröffnungsveranstaltung ab. Auf einer circa 100 Hektar großen Ackerfläche der Ortsgemeinde Hasselbach bildet sich eine der größten Zeltstädte Deutschlands.",
+                "genre":"Techno/House/Goa","ort":"Pydna"},
+            {
+                "id":"5",
+                "name":"Parookaville",
+                "info":"Parookaville (PV) ist ein mehrtägiges Musikfestival im Bereich der elektronischen Tanzmusik, das seit 2015 jährlich in Weeze veranstaltet wird. Mittlerweile ist es das größte Festival für elektronische Musik in Deutschland. Durchgeführt wird das Festival auf einem ehemaligen Militärflughafen der Royal Air Force, der Teil des Flughafens Weeze ist. Einige Bühnen werden in ehemaligen Sheltern des Militärflughafens aufgebaut.",
+                "genre":"Techno/House/Goa","ort":"Weeze"},
+            {
+                "id":"6",
+                "name":"Sonne, Mond und Sterne",
+                "info":"Das SonneMondSterne Festival ist eines der größten Open-Air-Festivals der elektronischen Tanzmusik in Europa, es treten vereinzelt auch Vertreter des Rock und Pop auf. Das Festival findet jährlich am zweiten Augustwochenende in Thüringen an der Bleilochtalsperre bei Saalburg-Ebersdorf statt.",
+                "genre":"Techno/House/Goa","ort":"Saalburg-Ebersdorf"},
+            {
+                "id":"7",
+                "name":"Splash! Festival",
+                "info":"Das splash!-Festival ist ein seit 1998 veranstaltetes Hip-Hop-Festival. Von 1999 bis 2006 fand es am Stausee Oberrabenstein bei Chemnitz statt. In den Jahren 2007 und 2008 fand das splash! infolge der starken Regenfälle in den Vorjahren und der damit verbundenen finanziellen Krise auf der Halbinsel Pouch bei Bitterfeld statt. Seit 2009 hat das splash! auf der Halbinsel Ferropolis bei Gräfenhainichen einen neuen Veranstaltungsort.",
+                "genre":"Hip-Hop","ort":"Gräfenhainichen"},
+            {
+                "id":"8",
+                "name":"Out4Fame Festival",
+                "info":"Das Out4Fame-Festival ist eine Hip-Hop-Veranstaltung, die von 2014 bis 2016 auf der Schwarzen Heide in Hünxe stattfand und ab 2017 im Revierpark Wischlingen in Dortmund stattfinden wird.",
+                "genre":"Hip-Hop","ort":"Dortmund"},
+            {
+                "id":"9",
+                "name":"UrbanArt! HipHop Festival",
+                "info":"Das „UrbanArt Hip Hop Festival“ ist ein Festival des Veranstalters „4 plus 1 Konzerte“ im Weltkulturerbe Völklinger Hütte. Es präsentiert Stars der Hip-Hop-Szene in der einzigartigen Industriekultur des UNESCO-Weltkulturerbes Völklinger Hütte.",
+                "genre":"Hip-Hop","ort":"Völklingen"},
+            {
+                "id":"10",
+                "name":"M'era Luna",
+                "info":"Das M’era Luna Festival ist ein seit 2000 veranstaltetes Musikfestival in Hildesheim. Mit beständigen Besucherzahlen von über 20.000 Menschen ist es neben dem in Leipzig stattfindenden Wave-Gotik-Treffen eines der größten Festivals der Alternative-Musik- und Schwarzen Szene.",
+                "genre":"Gothic","ort":"Hildesheim"},
+            {
+                "id":"11",
+                "name":"Amphi Festival",
+                "info":"Das Amphi Festival ist ein seit 2005 stattfindendes Musikfestival, das mit seinem breit gefächerten Programm ein heterogenes Publikum, darunter vor allem Anhänger der Alternative- und Schwarzen Szene, anspricht. Das Spektrum auftretender Künstler umfasst sowohl elektronische Spielarten wie Elektro und Future Pop als auch Rockmusik wie Neue Deutsche Härte oder Mittelalterrock. Zudem gibt es in der Nacht noch ein Disko-Programm. Weiterhin finden Lesungen und Theateraufführungen statt. Bis 2012 war das Musikmagazin Orkus der offizielle Partner des Festivals.",
+                "genre":"Gothic","ort":"Köln"},
+            {
+                "id":"12",
+                "name":"Dark Storm Festival",
+                "info":"Das Dark Storm Festival ist ein Musikfestival der Schwarzen Szene das seit 1997 jährlich zwischen den Jahren stattfindet, seit 2004 fest am 25. Dezember in der Stadthalle Chemnitz. Das Festival bietet einen Querschnitt durch die verschiedenen Musikstile der Szene, aufgeteilt auf Nebenbühne (mit dem Schwerpunkt auf Elektronische Tanzmusik und Electro) und Hauptbühne. Vereinzelt werden zudem Acts aus dem Bereich des Metal gebucht.",
+                "genre":"Gothic","ort":"Chemnitz"},
+            {
+                "id":"13",
+                "name":"Summerjam Festival",
+                "info":"Das Summerjam ist eines der größten Reggae-Festivals in Europa. Es findet seit 1986 jährlich am ersten bzw. zweiten Juli-Wochenende statt. Unter einem wechselnden Motto tritt jedes Jahr eine Vielzahl an Künstlern aus der weltweiten Reggae- und Dancehallszene auf.",
+                "genre":"Reagge/Dancehall","ort":"Köln"},
+            {
+                "id":"14",
+                "name":"Ruhr Reagge Summer",
+                "info":"Der Ruhr Reggae Summer ist ein seit 2008 jährlich wiederkehrendes Musikfestival im Ruhrgebiet. Hauptsächlich werden Reggae, Dancehall und Afrobeat gespielt.",
+                "genre":"Reagge/Dancehall","ort":"Dortmund"},
+            {
+                "id":"15",
+                "name":"Reagge Jam",
+                "info":"Das Reggae Jam ist im Vergleich kleiner als die anderen großen europäischen Reggae-Festivals, wie zum Beispiel das Rototom Sunsplash oder das Summerjam-Festival. In den letzten Jahren sind die Besucherzahlen jedoch stetig gestiegen und auch die Künstler sind bekannter, als in den früheren Jahren, als das Reggae Jam hauptsächlich auf einige wenige Stars und viele, hauptsächlich deutsche, Newcomer setzte. Im Leserpool der Zeitschrift riddim belegte das Reggae Jam 2005, 2006 und 2007 jeweils den zweiten Platz unter den Festivals. In den Jahren 2008 bis 2015 schaffte es das Festival achtmal hintereinander als bestes Reggaefestivals Deutschlands auf Platz 1 des Leserpolls gewählt zu werden.",
+                "genre":"Reagge/Dancehall","ort":"Chemnitz"
+            {
+                "id":"16",
+                "name":"Deichbrand",
+                "info":"Das DEICHBRAND ist ein jährlich stattfindendes Musikfestival in oder in näherer Umgebung von Cuxhaven. 2009 hatte das Open-Air-Festival mehr als 10.000 Besucher, 2011 war es mit knapp 20.000 verkauften Tickets zum ersten Mal ausverkauft. 2012 und 2013 war das Festival mit 25.000 beziehungsweise 35.000 Besuchern ebenfalls voll. 2014 feierten dann 40.000 Fans das große Jubiläumsfestival. 2016 erreichte das Deichbrand Festival mit 50.000 Besuchern einen neuen Besucherrekord.",
+                "genre":"Rock/Metal/Punk","ort":"Cuxhaven"},
+            {
+                "id":"17",
+                "name":"With Full Force",
+                "info":"Das With Full Force ist ein jährlich im Frühsommer stattfindendes Musikfestival für Metal, Hardcore und Punk. Im Jahr 2011 besuchten erstmals mehr als 30.000 Gäste das Festival.",
+                "genre":"Rock/Metal/Punk","ort":"Ferropolis"},
+            {
+                "id":"18",
+                "name":"BigCityBeats Worl Club Dome",
+                "info":"Der BigCityBeats World Club Dome ist ein Musikfestival im Bereich der elektronischen Tanzmusik, das seit 2013 jährlich Ende Mai oder Anfang Juni in der Commerzbank-Arena in Frankfurt am Main stattfindet. Veranstaltet wird das Festival vom Radiosender BigCityBeats. Der Ableger World Club Dome Winter Edition wurde von 2015 bis 2017 in der Gelsenkirchener Veltins-Arena veranstaltet und findet seit 2018 in der Düsseldorfer Merkur Spiel-Arena statt.",
+                "genre":"Techno/House/Goa","ort":"Frankfurt am Main"},
+            {
+                "id":"19",
+                "name":"Airbeat One",
+                "info":"Airbeat One (auch: Airbeat-One) ist ein Festival der elektronischen Tanzmusik in Neustadt-Glewe, Mecklenburg-Vorpommern. Es wurde 2002 als Airbase One erstmals veranstaltet und wuchs bis heute von weniger als 1.000 Besuchern auf bis zu über 55.000. Es ist das größte Festival dieser Art in Norddeutschland, wobei im Hinblick auf die vertretenen Genres Überschneidungen mit dem Fusion Festival existieren, welches bis zu 70.000 Besucher verzeichnet und sich über 4 Tage erstreckt.",
+                "genre":"Techno/House/Goa","ort":"Neustadt-Glewe"},
+            {
+                "id":"20",
+                "name":"KuRT Festival",
+                "info":"Das KuRT Festival ist ein seit 2007 jährlich in Reutlingen stattfindendes Umsonst & Draußen-Festival. Das Festival wird von jugendlichen Mitgliedern des Vereins KuRT e.V. ehrenamtlich organisiert. Neben Hip-Hop- und Indie-Konzerten am Freitag und Samstag findet immer am Donnerstag des Festivals ein Poetry Slam statt. Während des Festivals finden auch Graffiti und andere Kunstaktionen statt.",
+                "genre":"Hip-Hop","ort":"Reutlingen"},
+            {
+                "id":"21",
+                "name":"Cherry Beach Festival",
+                "info":"Viele Sänger und tolle Bands, alle vereint auf einer Bühne. Das Cherry Beach Festival Event sollten Sie sich auf gar keinen Fall entgehen lassen. Zögern Sie also nicht und sichern Sie sich Ihre Cherry Beach Festival Tickets noch heute. Ein unvergessliches Event nur wenige Klicks von Ihnen entfernt.",
+                "genre":"Hip-Hop","ort":"Boxberg/Oberlausitz"},
+            {
+                "id":"22",
+                "name":"Wave-Gotik-Treffen",
+                "info":"Das Wave-Gotik-Treffen ist ein Musik- und Kulturfestival, das seit 1992 jährlich am Pfingstwochenende in Leipzig stattfindet und von der Chemnitzer Firma „Treffen & Festspielgesellschaft für Mitteldeutschland mbH“ organisiert wird. Mit derzeit (2017) etwa 21.000 Besuchern ist es neben dem in Hildesheim stattfindenden M’era Luna Festival eine der größten Veranstaltungen der Alternativen und Schwarzen Szene.",
+                "genre":"Gothic","ort":"Leipzig"},
+            {
+                "id":"23",
+                "name":"Autumn Moon",
+                "info":"Ein einzigartiges Line-Up jenseits aller Genregrenzen mit viel Platz für bekannte Größen und spannende Neuentdeckungen. Die 4 Indoor-Spielorte liegen dicht beieinander, verbunden durch den Mystic Halloween Market entlang der Weser. Zusammen mit der Outdoor-Bühne auf dem Marktgelände verbinden sie sich zu einer einzigartigen Festival-Arena. Der Halloween-Markt ist kostenlos und für alle Besucher zugänglich, er ist auch Sonntag noch geöffnet.",
+                "genre":"Gothic","ort":"Hameln"},
+            {
+                "id":"24",
+                "name":"Afrika Karibik Festival",
+                "info":"Das one race … human! Afrika-Karibik-Festival findet seit 1998 jährlich am zweiten Augustwochenende auf dem Festplatz in Aschaffenburg statt. Bis zu 60.000 Menschen besuchen das Festival am bayerischen Untermain jährlich.",
+                "genre":"Reagge/Dancehall","ort":"Aschaffenburg"},
+            {
+                "id":"25",
+                "name":"Chiemsee Summer",
+                "info":"Der Chiemsee Summer (CS) ist ein Open Air-Festival, das jährlich im August in Übersee südlich des Chiemsees veranstaltet wird. Stilistisch bewegt sich das internationale Musikprogramm zwischen Rock, Hip Hop und Elektro und zieht jedes Jahr rund 35.000 Besucher an.",
+                "genre":"Reagge/Dancehall","ort":"Cuxhaven"
             }
         ]
     }
