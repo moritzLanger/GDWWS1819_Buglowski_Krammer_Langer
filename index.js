@@ -80,3 +80,8 @@ function genreCheck(genstr,reqstr) {
      return genstr;   
     }
 }
+
+app.get('/ort',(req,res) => {
+    var html2 = fs.readFileSync('./ort.html', 'utf8');
+    res.send(html2);
+});
