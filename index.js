@@ -5,7 +5,7 @@ var content = fs.readFileSync("festivals.json");
 var json = JSON.parse(content);
 app.use(express.json());
 const geolib = require("geolib"); // npm install geolib
-const request = require('request'); // npm install request4
+const request = require('request'); // npm install request
 const Joi = require('joi');    //npm install joi
 
 
@@ -40,20 +40,20 @@ app.post('/festivals', function(req, res){
             var cordinate = JSON.parse(body)
         }
         const festival = {
-            id: array.length + 1,
+            id: array.length + "1",
             name: req.body.name,
             info: req.body.info,
             genre: req.body.genre,
             ort: req.body.ort,
-            distanz: 0,
+            distanz: "0",
             lat: cordinate.coord.lat,
-            lon: cordinate.coord.log,
+            lon: cordinate.coord.lon,
         };
         array.push(festival);
         var data = JSON.stringify(array,null, 2);
         fs.writeFile('festivals.json', `{"response":{"festivals":${data} } }`, (err)=>{
             console.log("all set");
-            res.send("all good");
+            res.send(array);
         
         })
     });
@@ -76,7 +76,7 @@ app.get('/festivals/:festivalid',(req,res) => {
         var result = json.response.festivals.find((item)=>{
            return item.id === req.params.festivalid
         })
-         res.send (result)
+         res.send(result)
 });
 
 
