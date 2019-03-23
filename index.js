@@ -40,7 +40,7 @@ app.post('/festivals', function(req, res){
             var cordinate = JSON.parse(body)
         }
         const festival = {
-            id: array.length + "1",
+            id: array.length + 1,
             name: req.body.name,
             info: req.body.info,
             genre: req.body.genre,
